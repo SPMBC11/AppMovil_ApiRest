@@ -12,12 +12,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-
-data class HeroListUIState(
-    val isLoading: Boolean = false,
-    val heroes: List<HeroInfo> = emptyList(),
-    val errorMessage: String? = null
-)
+import com.example.parcial_p.ui.screens.herolist.HeroListUIState
 
 @HiltViewModel
 class HeroListViewModel @Inject constructor(
